@@ -32,8 +32,8 @@ dist_coeff = np.array(([-0.011935952], [0.03064728],  [-0.00067055], [ -0.005126
 
 ################################################################################################################
 
-### euler angles in format [yaw, pitch, roll] ###
-euler = np.array([135, 5, 94])   # deg
+### euler angles in format [roll, pitch, yaw] ###
+euler = np.array([140, 340, 94])   # deg
 
 ### translation vector in enu coordinates ###
 t_enu = np.array([0.72449914, -377.52858335,  326.48367362])
@@ -46,7 +46,7 @@ rvec = rot.as_rotvec().reshape(3,1)
 print('\ninput rvec:', rvec)
 
 
-### define rotation vector ###
+### define translation vector ###
 tvec = - np.dot(rot.as_matrix(), t_enu)
 print('\ninput tvec:', tvec)
 
