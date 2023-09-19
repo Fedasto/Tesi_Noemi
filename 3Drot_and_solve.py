@@ -137,7 +137,7 @@ for i in range(N):
 # drone euler angles
 D_roll = 0   # rad
 D_pitch = 0   # rad
-D_yaw = 20  # rad
+D_yaw = 0  # rad
 D_euler = np.array([D_roll, D_pitch, D_yaw], np.float32)
 
 # drone t_enu 
