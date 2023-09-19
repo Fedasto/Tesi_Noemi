@@ -95,8 +95,8 @@ def euler2matrix(angle) :
 ### 3D ROTATION ################################################################################################
 
 ### set up rotation parameters ###
-roll = np.deg2rad(40) / (N-1)   # rad
-pitch = np.deg2rad(25) / (N-1)   # rad
+roll = 0   # rad
+pitch = 0   # rad
 yaw = np.deg2rad(150) / (N-1)   # rad
 euler = np.array([roll, pitch, yaw], np.float32)
 
@@ -137,7 +137,7 @@ for i in range(N):
 # drone euler angles
 D_roll = 0   # rad
 D_pitch = 0   # rad
-D_yaw = 90  # rad
+D_yaw = 20  # rad
 D_euler = np.array([D_roll, D_pitch, D_yaw], np.float32)
 
 # drone t_enu 
