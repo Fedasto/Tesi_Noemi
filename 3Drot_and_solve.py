@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 camera_settings = True
 var = 0
 
-### use ExtrinsicGuess in solcePnP ###
+### use ExtrinsicGuess in solvePnP ###
 ExtrinsicGuess = True
 
 ### visualize target plots ###
